@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/navcollapsed.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Login FITNESS GYM</title>
+</head>
+<body>
+    <div class="subir">
+        <div class="flecha"></div>
+      </div>
+    <div class="container">
+        <div class="principalLogin">
+            <div class="opacidad">
+                <header class="global-nav">
+                    <nav role="navigation" class="container">
+                      <ul class="nav-wrapper">
+                        <!-- Start Logo Section -->
+                        <li class="navsection-logo">
+                          <a href="/">
+                            <div class="logo"></div>
+                          </a>
+                        </li>
+                        <!-- End Logo Section -->
+                        <!-- Start Primary Section -->
+                        <li class="navsection-primary">
+                          <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="/index.html#nosotros">Nosotros</a></li>
+                            <li><a href="./clases.html">Clases</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <li><a href="./login.html" class="activo">Login</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Primary Section -->
+                        <!-- Start Mobile Section -->
+                        <li class="navsection-mobile">
+                          <!-- Mobile Menu Button -->
+                                   <h2>Menu</h2>
+                          <a class="mobilemenu-wrapper" id="toggle">
+                              <span class="bars"></span>
+                              <span class="bars"></span>
+                              <span class="bars"></span>
+                            </a>
+                          <!-- Overlay -->
+                          <div class="overlay" id="overlay">
+                            <div>
+                              <ul>
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./index.html#nosotros">Nosotros</a></li>
+                                <li><a href="./clases.html">Clases</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                                <li><a href="./login.html">Login</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- End Mobile Section -->
+                        <!-- Start Search Section -->
+                        <li class="navsection-search">
+                          <div>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+            </div>
+            
+        </div>
+        <main>
+            <section class="login">
+                <div class="introLogin">
+                    <span><span class="negrita">Bienvenidos</span> a nuestra Sección de Login</span>
+                    <span>Podrás registrarte  y loguearte una vez estes matriculado en <span class="negrita">FITNESS GYM.</span></span>
+                    <span>Pudes consultas tus progresos, ver tus rutinas, clases, configurar tus pagos, datos....</span>
+                </div>
+                <div class="ContainertarjetaLogin">
+                    <div class="titTarjetaLogin">
+                        <h2>Entrar</h2>
+                        <h2>Registrar</h2>
+                    </div>
+                    
+                        <input type="checkbox" id="btn-switch"/>
+                        <label for="btn-switch" class="lbl-switch"></label>
+                    
+                    <div class="tarjetaLogin">
+                        <div class="frente">
+                            <h1>ENTRAR</h1>
+                            <div class="fila">
+                              <div class="icoUser"></div>
+                              <input type="text" placeholder="Usuario">
+                            </div>
+                            <div class="fila">
+                              <div class="icoPasswd"></div>
+                              <input type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="fila">
+                              <div class="btnEntrar">
+                                <a href="">Entrar</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="atras">
+                            <h1>REGISTRARSE</h1>
+                            <div class="fila">
+                              <div class="icoUser"></div>
+                              <input type="text" placeholder="nombre de usuario">
+                            </div>
+                            <div class="fila">
+                              <div class="icoArroba"></div>
+                              <input type="email" placeholder="inserta tu e-mail">
+                            </div>
+                            <div class="fila">
+                              <div class="icoPasswd"></div>
+                              <input type="password" placeholder="inserte contraseña">
+                            </div>
+                            <div class="fila">
+                              <div class="icoPasswd"></div>
+                              <input type="password" placeholder="confirmar contraseña">
+                            </div>
+                            <div class="fila">
+                              <div class="btnRegistrar">
+                                <a href="">Registrarse</a>
+                              </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="newsletter">
+              <div class="capaOpacidad">
+                <div class="containerNewsletter">
+                  <div class="textoNewsletter">
+                    <span>Suscribete a nuestro </span><span class="negrita">NEWSLETTER </span><br>
+                    <span>y recibiras Información de clases y ofertas</span>
+                  </div>
+                  <div class="icoCorriendo"></div>
+                  <div class="formFooter">
+                    <input type="email" placeholder="Inserta tu email">
+                    <div class="btnSuscribirse">
+                      <a href="">Suscribirse</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="footer">
+              <div class="opacidadFooter">
+                <div class="logoFooter">
+                  <div class="logo"></div>
+                </div>
+                <div class="containerFooter">
+                  <div class="infoGym">
+                    
+                    <div class="datos">
+                      <h2>Dirección</h2>
+                      <span>C. de Fomento, 3, 28013 Madrid</span>
+                      <h2>Teléfonos</h2>
+                      <span>915 47 26 68</span>
+                      <span>655 34 97 90</span>
+                      <h2>Email</h2>
+                      <span>info@fitnesgym.com</span>
+                      <h2>Horario</h2>
+                      <span>Lunes - Viernes : 07:00 - 23hrs</span>
+                      <span>Sábados - Domingos : 08:00 - 22:00 hrs</span>
+                    </div> 
+                  </div>
+                  <div class="poliClases">
+                    <div class="politicas">
+                      <h2>Políticas</h2>
+                      <span><a href="">Políticas de Privacidad</a></span>
+                      <span><a href="">Políticas de Cookies</a></span>
+                      <span><a href="">Aviso Legal</a></span>
+                    </div>
+                    <div class="clasesFooter">
+                      <h2>Clases</h2>
+                      <span><a href="">MMA</a></span>
+                      <span><a href="">Yoga</a></span>
+                      <span><a href="">Crossfit</a></span>
+                      <span><a href="">Spinning</a></span>
+                      <span><a href="">Aquapilates</a></span>
+                      <span><a href="">Body Pump</a></span>
+                    </div>
+                  </div>
+                  <div class="enlaces">
+                    <h2>Enlaces</h2>
+                    <span><a href="">Inicio</a></span>
+                    <span><a href="">Nosotros</a></span>
+                    <span><a href="">Clases</a></span>
+                    <span><a href="">Contacto</a></span>
+                    <span><a href="">Login</a></span>
+                    <span><a href="">Instalaciones</a></span>
+                    <span><a href="">Programas</a></span>
+                    <span><a href="">Galería</a></span>
+                  </div>
+                </div>
+                <div class="rssFooter">
+                  <div class="rssFooter">
+                    <div class="fb"></div>
+                    <div class="ig"></div>
+                    <div class="tw"></div>
+                  </div>
+                </div>
+                <div class="separador"><hr></div>
+                <div class="derechosAutor">
+                  <span>Fitness Gym © 2023 Todos los derechos reservados</span>
+                </div>
+              </div>
+             
+            </section>
+          </footer>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

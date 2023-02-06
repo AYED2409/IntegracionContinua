@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/navcollapsed.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Clases FITNESS GYM</title>
+</head>
+<body>
+    <div class="subir">
+        <div class="flecha"></div>
+      </div>
+    <div class="container">
+        <div class="principalClases">
+            <div class="opacidad">
+                <header class="global-nav">
+                    <nav role="navigation" class="container">
+                      <ul class="nav-wrapper">
+                        <!-- Start Logo Section -->
+                        <li class="navsection-logo">
+                          <a href="/">
+                            <div class="logo"></div>
+                          </a>
+                        </li>
+                        <!-- End Logo Section -->
+                        <!-- Start Primary Section -->
+                        <li class="navsection-primary">
+                          <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="/index.html#nosotros">Nosotros</a></li>
+                            <li><a href="./clases.html " class="activo">Clases</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <li><a href="./login.html" >Login</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Primary Section -->
+                        <!-- Start Mobile Section -->
+                        <li class="navsection-mobile">
+                          <!-- Mobile Menu Button -->
+                                   <h2>Menu</h2>
+                          <a class="mobilemenu-wrapper" id="toggle">
+                              <span class="bars"></span>
+                              <span class="bars"></span>
+                              <span class="bars"></span>
+                            </a>
+                          <!-- Overlay -->
+                          <div class="overlay" id="overlay">
+                            <div>
+                              <ul>
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./index.html#nosotros">Nosotros</a></li>
+                                <li><a href="./clases.html">Clases</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                                <li><a href="./login.html">Login</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- End Mobile Section -->
+                        <!-- Start Search Section -->
+                        <li class="navsection-search">
+                          <div>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+            </div>
+        </div>
+        <main>
+            <section class="sectionClases">
+                <h1>Clases</h1>
+                <div class="containerIntroClases">
+                    <div class="textoIntroClases">
+                        <span>En FITNESS GYM ofrecemos una amplia variedad de clases.</span>
+                        <span>Tenemos una gran variedad de actividades dirigidas y  horarios .</span>
+                        <span>Nuestros instructores  adaptan cada clase, para que sea accesible</span>
+                        <span>desde personas que están acostumbradas a entrenar a diario</span>
+                        <span>como aquellas que empiezan de cero.</span>
+                    </div>
+                    <div class="imgIntroClases"></div>
+                </div>
+                <div class="containerIntroClases">
+                    <div class="imgIntroClases2"></div>
+                    <div class="textoIntroClases">
+                        <span>Una de las mejores maneras de entrenar es asistiendo</span>
+                        <span>a algunas clases específicas del gimnasio que te ayudarán </span>
+                        <span>a trabajar los principales grupos musculares de manera entretenida.</span>
+                        <span>Mantendrás tu motivación gracias a la música y a los compañeros.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="clases">
+                <h1>Clases Dirigidas</h1>
+                <div class="containerClases">
+                  <div class="clases1">
+                    <div class="imgCrossfit">
+                      <div class="fondoOpacidad">
+                        <a href="#crossfit"><h2>Crossfit</h2></a>
+                      </div>
+                    </div>
+                    <div class="imgMMA">
+                      <div class="fondoOpacidad">
+                        <a href="#mma"><h2>MMA</h2></a>
+                      </div>
+                    </div>
+                    
+                    <div class="imgYoga">
+                      <div class="fondoOpacidad">
+                        <a href="#yoga"><h2>Yoga</h2></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clases2">
+                    <div class="imgAquaPilates">
+                      <div class="fondoOpacidad">
+                        <a href="#aquaPilates"><h2>AquaPilates</h2></a>
+                      </div>
+                    </div>
+                    <div class="imgSpinning">
+                      <div class="fondoOpacidad">
+                        <a href="#spinning"><h2>Spinning</h2></a>
+                      </div>
+                    </div>
+                    <div class="imgBodyPump">
+                      <div class="fondoOpacidad">
+                        <a href="#bodyPump"><h2>Body Pump</h2></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="clase" id="crossfit">
+                <h1>Crossfit</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgCrossfit2"></div>
+                          <div class="columna flex1">
+                            <span>En las sesiones se trabaja con una intensidad muy alta y un tiempo reducido</span>
+                            <span>Cada día se realiza un varios grupos de ejercicios funcionales</span>
+                            <span>organizados en forma de circuito y regulados por intervalos de trabajo con un descanso escaso.</span>
+                            <span>El trabajo de la fuerza muscular de todo el cuerpo es un básico en el Crossfit,</span>
+                            <span>ya que se trabaja con cargas altas y mucha intensidad.</span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoCrossfit">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorCrossfit">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenador</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">Justin Mediros</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+              </section>
+              <section class="clase gris" id="yoga">
+                <h1>Yoga</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgYoga2"></div>
+                          <div class="columna flex1">
+                            <span>Es una práctica que conecta el cuerpo, la respiración y la mente.</span>
+                            <span>Esta práctica utiliza posturas físicas, ejercicios de respiración y meditación </span>
+                            <span>para mejorar la salud general. El yoga se desarrolló como una práctica espiritual 
+                            </span>
+                            <span>hace miles de años. Hoy en día la mayoría de las personas en occidente hace yoga 
+                            </span>
+                            <span>como ejercicio y para reducir el estrés.
+                            </span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoYoga">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorYoga">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenadora</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">Indra Davi</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+              </section>
+              <section class="clase" id="mma">
+                <h1>MMA</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgMMA2"></div>
+                          <div class="columna flex1">
+                            <span>Se imparten las disciplinas más importantes de las artes marciales mixtas</span>
+                            <span>contemporáneas, como el boxeo, lucha, Muay Thai, Jiu-Jitsu brasilero y Kickboxing.</span>
+                            <span>Cada sesión de MMA busca que cada asistente sienta la intensidad</span>
+                            <span>con la que se preparan los atletas de la UFC y viva la experiencia única</span>
+                            <span>de entrenar artes marciales mixtas en el Octágono.</span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoMMA">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorMMA">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenador</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">Anderson Silva</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div> 
+              </section>
+              <section class="clase gris" id="spinning">
+                <h1>Spinning</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgSpinning2"></div>
+                          <div class="columna flex1">
+                            <span>El trabajo se centra en glúteos, cuádriceps e isquios son los que llevan</span>
+                            <span>la mayor carga del entrenamiento. También la musculatura de la zona central</span>
+                            <span>de nuestro cuerpo, encargada de mantener una postura correcta</span>
+                            <span>durante la sesión, se lleva un buen entrenamiento durante las clases.</span>
+                            <span>Clases muy motivadoras, amenas y divertidas</span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoSpinning">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorSpinning">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenadora</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">Julie Rice</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+              </section>
+              <section class="clase" id="aquaPilates">
+                <h1>Aquapilates</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgAquapilates2"></div>
+                          <div class="columna flex1">
+                            <span>Son Pilates que podemos practicar dentro del agua, o utilizando una 
+                            </span>
+                            <span>colchoneta flotante encima de la misma, que nos servirá como elemento inestable.
+                            </span>
+                            <span>Es una opción diferente que puedes escoger si necesitas de un punto extra 
+                            </span>
+                            <span>de diversión para adherirte a la práctica deportiva, 
+                            </span>
+                            <span>si eres amante de la playa o la piscina</span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoAquapilates">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorAquapilates">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenadora</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">Anna Espar</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+              </section>
+              <section class="clase gris" id="bodyPump">
+                <h1>Body Pump</h1>
+                <div class="containerClase">
+                    <div class="fila">
+                          <div class="imgBodyPump2"></div>
+                          <div class="columna flex1">
+                            <span>Es una disciplina ideal para combinar con otras más aeróbicas que te permitirá</span>
+                            <span>tonificar toda tu musculatura en una clase divertida. Poco a poco</span>
+                            <span>podrás ir progresando con los pesos que usas en los diferentes ejercicios</span>
+                            <span>Un trabajo completo para los grandes grupos musculares en los que</span>
+                            <span>se entrenan todos los músculos al ritmo de la música</span>
+                          </div>                    
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Intensidad</h2>
+                                <span>Muy Alta</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Grupo</h2>
+                                <span>16pax</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Duración</h2>
+                                <span>50min</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Calorias</h2>
+                                <span>600</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Edad</h2>
+                                <span>+18</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Días</h2>
+                                <span>L-M-V</span>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="columna centrada">
+                                <h2>Horario</h2>
+                                <span>16 - 16:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fila centrada">
+                        <div class="videoBodyPump">
+                            <div class="play"></div>
+                        </div>
+                        <div class="entrenadorBodyPump">
+                            <div class="fondoOpacidad">
+                              <h2>Entrenador</h2>
+                              <div class="contenidoEntrenador">
+                                <span class="nombreEntrenador">David Ruiz</span>
+                                <div class="rss">
+                                  <div class="tw"></div>
+                                  <div class="ig"></div>
+                                  <div class="fb"></div>
+                                </div>
+                                <div class="btnInfo">
+                                  <div class="btn">
+                                    <a href="">Información</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+              </section>
+        </main>
+        <footer>
+            <section class="newsletter">
+              <div class="capaOpacidad">
+                <div class="containerNewsletter">
+                  <div class="textoNewsletter">
+                    <span>Suscribete a nuestro </span><span class="negrita">NEWSLETTER </span><br>
+                    <span>y recibiras Información de clases y ofertas</span>
+                  </div>
+                  <div class="icoCorriendo"></div>
+                  <div class="formFooter">
+                    <input type="email" placeholder="Inserta tu email">
+                    <div class="btnSuscribirse">
+                      <a href="">Suscribirse</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="footer">
+              <div class="opacidadFooter">
+                <div class="logoFooter">
+                  <div class="logo"></div>
+                </div>
+                <div class="containerFooter">
+                  <div class="infoGym">
+                    
+                    <div class="datos">
+                      <h2>Dirección</h2>
+                      <span>C. de Fomento, 3, 28013 Madrid</span>
+                      <h2>Teléfonos</h2>
+                      <span>915 47 26 68</span>
+                      <span>655 34 97 90</span>
+                      <h2>Email</h2>
+                      <span>info@fitnesgym.com</span>
+                      <h2>Horario</h2>
+                      <span>Lunes - Viernes : 07:00 - 23hrs</span>
+                      <span>Sábados - Domingos : 08:00 - 22:00 hrs</span>
+                    </div> 
+                  </div>
+                  <div class="poliClases">
+                    <div class="politicas">
+                      <h2>Políticas</h2>
+                      <span><a href="">Políticas de Privacidad</a></span>
+                      <span><a href="">Políticas de Cookies</a></span>
+                      <span><a href="">Aviso Legal</a></span>
+                    </div>
+                    <div class="clasesFooter">
+                      <h2>Clases</h2>
+                      <span><a href="">MMA</a></span>
+                      <span><a href="">Yoga</a></span>
+                      <span><a href="">Crossfit</a></span>
+                      <span><a href="">Spinning</a></span>
+                      <span><a href="">Aquapilates</a></span>
+                      <span><a href="">Body Pump</a></span>
+                    </div>
+                  </div>
+                  <div class="enlaces">
+                    <h2>Enlaces</h2>
+                    <span><a href="">Inicio</a></span>
+                    <span><a href="">Nosotros</a></span>
+                    <span><a href="">Clases</a></span>
+                    <span><a href="">Contacto</a></span>
+                    <span><a href="">Login</a></span>
+                    <span><a href="">Instalaciones</a></span>
+                    <span><a href="">Programas</a></span>
+                    <span><a href="">Galería</a></span>
+                  </div>
+                </div>
+                <div class="rssFooter">
+                  <div class="rssFooter">
+                    <div class="fb"></div>
+                    <div class="ig"></div>
+                    <div class="tw"></div>
+                  </div>
+                </div>
+                <div class="separador"><hr></div>
+                <div class="derechosAutor">
+                  <span>Fitness Gym © 2023 Todos los derechos reservados</span>
+                </div>
+              </div>
+             
+            </section>
+          </footer>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

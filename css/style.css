@@ -1,0 +1,2664 @@
+html,body,div,span,applet,object,video,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+    font-family: 'montserratBold';
+    src: 
+         url('./../fonts/montserrat/bold/Montserrat-Bold.woff2') format('woff2'),
+         url('./../fonts/montserrat/bold/Montserrat-Bold.woff') format('woff'),
+         url('./../fonts/montserrat/bold/Montserrat-Bold.ttf') format('truetype'),
+         url('./../fonts/montserrat/bold/Montserrat-Bold.eot') format("opentype");
+         font-weight: bold;
+}
+@font-face {
+    font-family: 'montserratRegular';
+    src: 
+         url('./../fonts/montserrat/regular/Montserrat-Regular.woff2') format('woff2'),
+         url('./../fonts/montserrat/regular/Montserrat-Regular.woff') format('woff'),
+         url('./../fonts/montserrat/regular/Montserrat-Regular.ttf') format('truetype'),
+         url('./../fonts/montserrat/regular/Montserrat-Regular.eot') format("opentype");
+}
+@font-face {
+    font-family: 'fullpack';
+    src: 
+         url('./../fonts/fullpack/full_pack_2025.woff2') format('woff2'),
+         url('./../fonts/fullpack/full_pack_2025.woff') format('woff'),
+         url('./../fonts/fullpack/full_pack_2025.ttf') format('truetype');
+         
+}
+
+html{
+    scroll-behavior: smooth;
+    --colorNaranja: #e57a11;
+    --colorGris: #0f1116;
+    color: white;
+    overflow-x: hidden;
+    font-family: "montserratRegular";
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.principal{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+.activo{
+    color:var(--colorNaranja);
+}
+video{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.principal header{
+    width: 100%;
+    top:0;
+    right: 0;
+    position: absolute;
+    display:flex;
+    z-index: 999;   
+}
+.publi{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    position: relative;
+}
+.containerPubli{
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.inscribirse{
+    margin:0 20px;
+    width: 50%;
+    height: 90%;
+    margin-top: -50px;
+    background-image: url(./../img/intro/pesasIntro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textInscribirse{
+    width: 65%;
+   
+}
+.btnInscribirse{
+    width: 30%;
+    height: 35px;
+    border: 1px solid var(--colorNaranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnInscribirse:hover{
+    background-color: white;
+    transition: background-color .5s ease;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25vw; /*24px*/
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+a:hover{
+    color:black;
+    transition: color 1s ease;
+}
+h1{
+    padding-top: 50px;
+    font-size: 1.98vw; /*38px*/
+    text-align: center;
+    font-weight: bold;
+    font-family: "montserratBold";
+}
+h2{
+    font-size: 1.56vw; /*30px*/
+    font-weight: bold;
+}
+span{
+    margin-top:20px;
+    font-size: 1.25vw; /*24px*/
+}
+.horas span{
+    font-size: 1.25vw; /*24px*/
+    margin-top: 10px;
+}
+.titulo{
+    font-weight: bold;
+}
+.clasesHorario{
+    margin-left: 20px;
+    width: 50%;
+    height: 90%;
+    margin-top: -50px;
+    background-image: url(./../img/intro/actividades.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.tit{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.containerHoras{
+    flex:1;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.horas{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.btnClases{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnClases2{
+    width: 60%;
+    height: 35px;
+    border: 1px solid var(--colorNaranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnClases2:hover{
+    background-color: white;
+    transition: background-color .5s ease;
+}
+.nosotros{
+    width: 100%;
+    height: 120vh;
+    background-color: var(--colorGris);
+}
+.subir{    
+    z-index: 9999;
+    display: none;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    cursor: pointer;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.flecha {
+   margin:20px;
+   width: 20px;
+   height: 20px;
+   border-top: 1px solid white;
+   border-right: 1px solid white;
+   transform: rotate(-45deg);
+  }
+.flecha:hover{ 
+    border-top: 3px solid var(--colorNaranja);
+    border-right: 3px solid var(--colorNaranja);
+}
+.negrita{
+    color: var(--colorNaranja);
+    font-weight: bold;
+    font-size: 1.66vw; /*32px*/
+}
+.containerNosotros{
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.fotoNosotros{
+    flex:1;
+    background-image: url(./../img/nosotros/entrenamiento.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}
+.textNosotros{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.textNosotros span{
+    margin-top: 20px;
+}
+.nosotros h2{
+    color: var(--colorNaranja);
+}
+.descripcion{
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.entrenamiento, .equipamiento, .instructores,.objetivos{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+}
+.textDescripcion{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.icoEntrenamiento{
+    background-image: url(./../img/nosotros/icono1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.icoEquipamiento{
+    background-image: url(./../img/nosotros/icono4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.icoInstructor{
+    background-image: url(./../img/nosotros/icono5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.icoObjetivos{
+    background-image: url(./../img/nosotros/icono6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.parallax {
+    background-image: url("./../img/parallax/pesas.jpg");
+    /* Set a specific height */
+    height: 50vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.numeros{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+}
+.numDescriptivo{
+    font-size: 2.08vw; /*40px*/
+    text-align: center;
+    font-weight: bold;
+}
+.titNumero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titNumero span{
+    margin-top: 10px;
+    text-align: center;
+}
+.entrenamientos{
+    width: 100%;
+    height: 115vh;
+    background-color: var(--colorGris);
+}
+.entrenador{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+.imagenEntrena{
+    flex:1;
+    background-image: url(./../img/entrenamiento/entrenamieno1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+.textoEntrena, .textoEntrenatu{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.entrenatu{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.imagenEntrenatu{
+    flex:1;
+    flex:1;
+    background-image: url(./../img/entrenamiento/entrenamieno2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.entrenador h2, .entrenatu h2{
+    color: var(--colorNaranja);
+    text-align: center;
+}
+.instalaciones{
+    width: 100%;
+    height: 115vh;
+    background-color: black;
+}
+.containerInstalacion{
+    width: 80%;
+    margin:0 auto;
+}
+.instalacion1, .instalacion2{
+    display: flex;
+}
+.imgFitness{
+    background-image: url(./../img/instalaciones/zonaFitnesyactividadesDirigidas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin:20px;
+    flex:1;
+    
+}
+.imgAcuatica{
+    background-image: url(./../img/instalaciones/piscina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin:20px;
+    flex:1;
+    
+    
+}
+.imgExterior{
+    background-image: url(./../img/instalaciones/pistasExteriores.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin:20px;
+    flex:1;
+    
+}
+.imgDirigida{
+    background-image: url(./../img/instalaciones/clasesDirigidas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin:20px;
+    flex:1;
+    
+   
+}
+.instalaciones h1{
+    margin-bottom: 20px;
+}
+.imgAcuatica:hover , .imgDirigida:hover , .imgExterior:hover, .imgFitness:hover, .fondoOpacidad:hover{
+    cursor: pointer;
+}
+.texto{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.texto:hover{
+    background-color:transparent;
+    transition: background-color 1s ease;
+}
+.texto h2{
+    margin-bottom: 20px;
+}
+.programas{
+    width: 100%;
+    height: 100vh;
+}
+.containerProgramas{
+    width: 100%;
+    height: 100%;
+    background-image: url(./../img/programas/pesasTarjetas.jpg);
+    background-position: right 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerTarjetas{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;  
+}
+.tarjetas{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;  
+}
+.tarjeta{
+    width: 400px;
+    display: flex;
+}
+.titTarjeta, .titTarjeta1,.titTarjeta2{
+    width: 50px;
+    height: 100%;
+}
+.titTarjeta h1:nth-child(1){
+    transform: rotate(-90deg) scale(1) translateX(-318%) translateY(-30%);
+    font-family:"fullpack" ;
+    font-size: 32px; /*32px*/
+    color:var(--colorNaranja);
+    
+}
+.titTarjeta1 h1:nth-child(1){
+    transform: rotate(-90deg) scale(1) translateX(-493%) translateY(-30%);
+    font-family:"fullpack" ;
+    font-size: 32px; /*32px*/
+    color:var(--colorNaranja);
+    
+    
+}
+.titTarjeta2 h1:nth-child(1){
+    transform: rotate(-90deg) scale(1) translateX(-274%) translateY(-30%);
+    font-family:"fullpack" ;
+    font-size: 32px; /*32px*/
+    color:var(--colorNaranja);
+    
+}
+.contenidoTarjeta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--colorNaranja);
+}
+.btnContratar{
+    margin-top: 30px;
+    width: 180px;
+    height: 35px;
+    border:1px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContratar a:hover{
+    color: var(--colorNaranja);
+    transition:color 1s ease;
+}
+.icoCorazon{
+    background-image: url(./../img/programas/icono2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.icoFuerza{
+    background-image: url(./../img/programas/icono3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.textoTarjeta{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.indiceMasa{
+    width: 100%;
+    height: 65vh;
+    background-color: var(--colorGris);
+}
+.containerIndiceMasa{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.textoIndiceMasa{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.imgIndiceMasa{
+    background-image: url(./../img/imc/imc.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 500px;
+    margin-top: 50px;
+    border:1px solid var(--colorNaranja);
+}
+.containerIMC{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.containerIMC h1{
+    font-family:"fullpack" ;
+    font-size: 1.66vw; /*32px*/
+    color:var(--colorNaranja);
+    
+}
+.imc{
+    width: 70%;
+    margin:0 auto;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    
+}
+.imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+    padding: 15px;
+    border:transparent;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color:white;
+    outline: unset;
+    outline-style: none;
+    font-size: 1.04vw; /*20px*/
+    width: 220px;
+    margin:20px;
+    
+}
+.formPart2, .formPart1,.formPart3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.formPart3{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resultado{
+    height: 150px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    line-height: 150px;
+    margin-top: -70px;
+}
+.btnCalcular{
+    width: 150px;
+    height: 35px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnCalcular a:hover{
+    color: var(--colorNaranja);
+    transition:color  1s ease;
+}
+.partners{
+    width: 100%;
+    height: 35vh;
+    background-color: black;
+}
+.containerPartners{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgON{
+    margin-top: 50px;
+    background-image: url(./../img/partners/on.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+}
+.imgEVL{
+    margin-top: 50px;
+    background-image: url(./../img/partners/everlast.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+}
+.imgGT{
+    margin-top: 50px;
+    background-image: url(./../img/partners/Gatorade-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+}
+.imgNK{
+    margin-top: 50px;
+    background-image: url(./../img/partners/nike.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+}
+.imgASF{
+    margin-top: 50px;
+    background-image: url(./../img/partners/Assault-Fitness-Logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+}
+.imgON:hover, .imgEVL:hover, .imgGT:hover, .imgNK:hover, .imgASF:hover{
+    animation: rotarlogo 2s infinite normal;
+    
+}
+@keyframes rotarlogo {
+    0% { transform: rotateX(   0deg ) rotateY( 0deg ) scale(1)}
+    50%{ transform: rotateX(   0deg ) rotateY( 360deg ) scale(1.5)}
+  100% { transform: rotateX(   0deg ) rotateY( 360deg ) scale(1.5)}
+}
+.clases{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorGris);
+}
+.containerClases{
+    width: 90%;
+    margin:30px auto 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.clases1, .clases2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.imgCrossfit{
+    background-image: url(./../img/clases/crossfit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.imgMMA{
+    background-image: url(./../img/clases/clasesMMA.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.imgYoga{
+    background-image: url(./../img/clases/clasesDirigidas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.imgAquaPilates{
+    background-image: url(./../img/clases/aquapilates.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.imgSpinning{
+    background-image: url(./../img/clases/spinning.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.imgBodyPump{
+    background-image: url(./../img/clases/bodypump.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 350px;
+    margin:20px;
+}
+.fondoOpacidad{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+.fondoOpacidad h2{
+    margin-bottom: 20px;
+}
+.fondoOpacidad:hover{
+    background-color: transparent;
+    transition: background-color  1s ease;
+}
+.entrenadores{
+    width: 100%;
+    height: 160vh;
+    background-color: black;
+}
+.entrenadores1, .entrenadores2{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+}
+.entrenadorCrossfit{
+    background-image: url(./../img/entrenadores/entrenadorCrossfit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadorYoga{
+    background-image: url(./../img/entrenadores/profesora-yoga.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadorMMA{
+    background-image: url(./../img/entrenadores/entrenadorMMA.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadorSpinning{
+    background-image: url(./../img/entrenadores/profesoraSpinning.jpg);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadorAquapilates{
+    background-image: url(./../img/entrenadores/profesoraAquapilates.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadorBodyPump{
+    background-image: url(./../img/entrenadores/maestrobodypump.jpg);
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    flex:1;
+}
+.entrenadores .fondoOpacidad, .clase .fondoOpacidad{
+    overflow: hidden;
+}
+.entrenadores .fondoOpacidad:hover, .clase .fondoOpacidad:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border:1px solid var(--colorNaranja);
+    box-sizing: border-box;
+    transition:all 1s ease;
+}
+.fondoOpacidad h2{
+    margin-bottom: 20px;
+}
+.rss{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tw{
+    background-image: url(./../img/rss/tw.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.ig{
+    background-image: url(./../img/rss/ig.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.fb{
+    background-image: url(./../img/rss/fb.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.tw:hover, .ig:hover, .fb:hover{
+    transform: rotate(360deg) scale(1.5);
+    transition: all 1s ease;
+}
+.btnInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin: 10px 0px 20px;
+    width: 180px;
+    height: 35px;
+    border: 1px solid var(--colorNaranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn a:hover{
+    background-color: white;
+    transition:all 1s ease;
+}
+.contenidoEntrenador, .entrenadores .fondoOpacidad h2, .clase .fondoOpacidad h2{
+    transform: translateY(150px); 
+}
+.entrenadores .fondoOpacidad:hover > .contenidoEntrenador, .entrenadores .fondoOpacidad:hover h2{
+    transform: translateY(-100px);
+    transition: all 1s ease-out;
+}
+.clase .fondoOpacidad:hover > .contenidoEntrenador, .clase .fondoOpacidad:hover h2{
+    transform: translateY(-100px);
+    transition: all 1s ease-out;
+}
+.introEntrenadores{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.textoEntrenadores{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin:50px 50px 0px 0px;
+}
+.imgEntrenador{
+    margin:50px 0px 100px;
+    background-image: url(./../img/entrenadores/entrenador.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    flex:1;
+}
+.galeria{
+    width: 100%;
+    height: 105vh;
+    background-color: var(--colorGris);
+}
+.containerGaleria{
+    padding-top: 50px;
+    width: 90%;
+    margin:0 auto;
+}
+footer{
+    width: 100%;
+    height: 95vh;
+}
+.newsletter{
+    width: 100%;
+    height: 30vh;
+    background-image: url(./../img/footer/newsletter.jpg);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    border-top:1px solid white;
+    border-bottom: 1px solid white;
+}
+.capaOpacidad{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.containerNewsletter{
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    height: 100%;
+    
+    align-items: center;
+}
+.icoCorriendo{
+    background-image: url(./../img/footer/corriendo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin:0 50px;
+}
+.formFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btnSuscribirse{
+    width: 200px;
+    height: 35px;
+    border: 1px solid var(--colorNaranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSuscribirse a:hover{
+    color:black;
+    background-color: white;
+    transition:all 1s ease;
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(./../img/footer/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.opacidadFooter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    
+}
+.containerFooter{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.infoGym{
+    
+    display: flex;
+    flex-direction: column;
+}
+.datos{
+    display: flex;
+    flex:3;
+    flex-direction: column;
+   
+}
+.logoFooter{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+}
+.rssFooter{
+    margin-top: 50px;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+}
+.poliClases{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.politicas, .clasesFooter,.enlaces{
+    display: flex;
+    flex-direction: column;
+   
+}
+.separador{
+    width: 90%;
+    margin:10px auto;
+}
+.derechosAutor{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.footer h2{
+    color: var(--colorNaranja);
+    margin-top:30px;
+}
+.footer span{
+    margin-top:12px;
+    cursor: pointer;
+}
+footer a:hover{
+    color:#5c5d61;
+    transition: color 1s ease;
+}
+.principalLogin{
+    background-image: url(./../img/login/loginInicio.jpg);
+    background-position: center 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+.opacidad{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.login{
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+}
+.principalContacto{
+    background-image: url(./../img/contacto/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+.mapa{
+    width: 100%;
+    height: 41vh;
+    overflow: hidden;
+}
+.containerContacto{
+    width: 100%;
+    height: 110vh;
+    background-color: var(--colorGris);
+}
+.contenidoContacto{
+    width: 90%;
+    margin:50px auto;
+    display: flex;
+    
+}
+.infoContacto{
+    flex:1;
+    margin-top: 20px;
+}
+.datosContacto{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 50px;
+}
+.dato{
+    display: flex;
+}
+.icoDireccion{
+    width: 70px;
+    height: 70px;
+    background-image: url(./../img/contacto/localizacion.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.icofono{
+    width: 70px;
+    height: 70px;
+    background-image: url(./../img/contacto/fono.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.icomail{
+    width: 70px;
+    height: 70px;
+    background-image: url(./../img/contacto/mail.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.dato{
+    margin-top: 20px;
+}
+.fono{
+    margin:40px 0 ;
+}
+.formularioContacto{
+    flex:1;
+    
+    margin-top: 20px;
+}
+.dato .negrita, .containerFormulario .negrita{
+    font-size: 1.25vw; /*24px*/
+}
+.formularioContacto h1{
+    font-family:"fullpack" ;
+    font-size: 1.66vw; /*32px*/
+    color:var(--colorNaranja);
+    
+}
+.containerFormulario{
+    width: 100%;
+    margin:20px auto;
+    border: 1px solid var(--colorNaranja);
+    border-radius: 5px;
+    height: 85%;
+    padding:25px;
+}
+.fila{
+    display: flex;
+    width: 90%;
+    margin:0 auto;
+    justify-content: center;
+}
+.filaCentrada{
+    display: flex;
+    width: 90%;
+    margin:0 auto;
+    justify-content: center;
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+.btnEnviar{
+    width: 150px;
+    height: 35px;
+    border: 1px solid var(--colorNaranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.btnEnviar:hover{
+    background-color: white;
+    transition: background-color .5s ease;
+}
+.containerFormulario input[type=text], .containerFormulario input[type=email]{
+    padding: 15px;
+    border:transparent;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color:white;
+    outline: unset;
+    outline-style: none;
+    font-size: 1.08vw; /*20px*/
+    width: 220px;
+    margin:20px;
+    
+}
+.textarea{
+    width: 566px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    margin-top: 20px;
+    font-size: 1.25vw; /*24px*/
+}
+.containerFormulario label{
+    font-size: 1.25vw; /*24px*/
+    margin-top: 20px;
+}
+.principalClases{
+    background-image: url(./../img/clases/clases.jpg);
+    background-position: center 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+.sectionClases{
+    width: 100%;
+    height: 115vh;
+    background-color: black;
+}
+.containerIntroClases{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+.textoIntroClases{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
+}
+.imgIntroClases{
+    flex:1;
+    background-image: url(./../img/clases/clase1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-left: 50px;
+}
+.imgIntroClases2{
+    flex:1;
+    background-image: url(./../img/galeria/galeria10.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.textoIntroClases:nth-child(2){
+    margin-left: 50px;
+}
+.dirigidas{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.clase{
+    width: 100%;
+    height: 140vh;
+    background-color: black;
+}
+.containerClase{
+    width: 90%;
+    margin:50px auto;
+}
+input[type=checkbox]{
+    width: 20px;
+    margin:24px 10px;
+}
+.containerClase .fila:nth-child(2){
+    border: 1px solid white;
+    height: 120px;
+    justify-content: space-around;
+}
+.centrada{
+    justify-content: center;
+    align-items: center;
+}
+.clase h2{
+    color: var(--colorNaranja);
+}
+.imgCrossfit2{
+    flex:1;
+    background-image: url(./../img/clases/crossfit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+    
+}
+.flex1{
+    flex:1;
+}
+.videoCrossfit{
+    background-image: url(./../img/clases/videocrossfit.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play{
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid white;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+}
+.clase .entrenadorCrossfit, .clase .entrenadorYoga, .clase .entrenadorMMA, .clase .entrenadorSpinning, .clase .entrenadorAquapilates, .clase .entrenadorBodyPump{
+    height: 450px;
+    margin-top: 20px;
+}
+.gris{
+    background-color: var(--colorGris);
+}
+.imgYoga2{
+    flex:1;
+    background-image: url(./../img/clases/clasesDirigidas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+}
+.videoYoga{
+    background-image: url(./../img/clases/videoyoga.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgMMA2{
+    flex:1;
+    background-image: url(./../img/clases/clasesMMA.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+}
+.videoMMA{
+    background-image: url(./../img/clases/videomma.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgSpinning2{
+    flex:1;
+    background-image: url(./../img/clases/spinning.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+}
+.videoSpinning{
+    background-image: url(./../img/clases/videospinning.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgAquapilates2{
+    flex:1;
+    background-image: url(./../img/clases/aquapilates.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+}
+.videoAquapilates{
+    background-image: url(./../img/clases/videoaquapilates.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgBodyPump2{
+    flex:1;
+    background-image: url(./../img/clases/bodypump.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1;
+    height: 400px;
+    margin:0 20px 40px 0;
+}
+.videoBodyPump{
+    background-image: url(./../img/clases/videobodypump.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 400px;
+    flex:2;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgCrossfit .fondoOpacidad a, .imgMMA .fondoOpacidad a, .imgYoga .fondoOpacidad a,.imgCrossfit .fondoOpacidad a,.imgAquaPilates .fondoOpacidad a,
+ .imgSpinning .fondoOpacidad a, .imgBodyPump .fondoOpacidad a{
+    padding-top: 55%;
+}
+.fondoOpacidad a:hover{
+    color:#5c5d61;
+    transition: color 1s ease;
+}
+.mapagoogle{
+    width: 1920px;
+    height: 400px;
+}
+.formularioContacto h1{
+    padding: 0;
+}
+
+
+
+
+
+
+/*    1920x1080 1440x900 1360x768  1280x720 
+      960x540  768x1024  667x375  640x480  640x360  411x731 375x812
+      360x720  375x667 360x640 
+*/
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .infoContacto{
+        max-width: 615px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .infoContacto{
+        max-width: 615px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        width: 125px;
+    }
+    .resultado{
+        width: 150px;
+        height: 150px;
+    }
+    .infoContacto{
+        max-width: 443px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    .login{
+        height: 155vh;
+    }
+    footer{
+        height: 120vh;
+    }
+    .containerContacto{
+        height: 135vh;
+    }
+    .sectionClases{
+        height: 146vh;
+    }
+    .clases{
+        height: 130vh;
+    }
+    .clase{
+        height: 172vh;
+    }
+    .nosotros{
+        height: 155vh;
+    }
+    .entrenamientos,.instalaciones{
+        height: 145vh;
+    }
+    .programas{
+        height: 114vh;
+    }
+    .indiceMasa{
+        height: 84vh;
+    }
+    .entrenadores{
+        height: 209vh;
+    }
+}
+
+@media screen and (max-width: 960px) and (max-height: 540px) {
+    .fotoNosotros{
+        height: 360px;
+    }
+    .imagenEntrena, .imagenEntrenatu{
+        height: 290px;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida{
+        height: 300px;
+    }
+    .tarjeta{
+        height: 520px;
+    }
+    .btnContratar{
+        margin-bottom: 30px;
+    }
+    .programas{
+        height: 124vh;
+    }
+    .imgIndiceMasa{
+        flex:2;
+    }
+    .indiceMasa{
+        height: 111vh;
+    }
+    .partners{
+        height: 54vh;
+    }
+    .imgCrossfit,.imgMMA,.imgYoga,.imgAquaPilates,.imgSpinning,.imgBodyPump{
+        height: 250px;
+    }
+    .entrenadorCrossfit,.entrenadorYoga,.entrenadorMMA,.entrenadorAquapilates,.entrenadorBodyPump,.entrenadorSpinning{
+        height: 310px;
+    }
+    .entrenadores{
+        height: 238vh;
+    }
+    .footer{
+        height: 135vh;
+    }
+    .imgIntroClases,.imgIntroClases2{
+        height: 300px;
+    }
+    .clase .entrenadorCrossfit, .clase .entrenadorAquapilates,.clase .entrenadorBodyPump, .clase .entrenadorSpinning,.clase .entrenadorYoga, .clase .entrenadorMMA{
+        height: 284px;
+    }
+    .videoCrossfit,.videoAquapilates,.videoBodyPump,.videoMMA,.videoSpinning,.videoYoga{
+        height: 228px;
+    }
+    .imgCrossfit2,.imgYoga2,.imgSpinning2,.imgAquapilates2,.imgMMA2,.imgBodyPump2{
+        height: 300px;
+    }
+    .clase{
+        height: 170vh;
+    }
+    .contenidoContacto{
+        flex-wrap: wrap;
+    }
+    .infoContacto{
+        max-width: 100%;
+    }
+    .containerFormulario{
+        width: 80%;
+    }
+    .containerContacto{
+        height: 248vh;
+    }
+    .ContainertarjetaLogin{
+        width: 600px;
+        height: 700px;
+    }
+    .login{
+        height: 176vh;
+    }
+    .formularioContacto h1{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .containerFormulario input[type=text], .containerFormulario input[type=email]{
+        font-size: 16px;
+    }
+    .containerContacto{
+        height: 257vh;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+    a,span, .horas span{
+        font-size: 24px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .numDescriptivo{
+        font-size: 40px;
+    }
+    .negrita{
+        font-size: 24px;
+    }
+    .containerPubli{
+        width: 90%;
+    }
+    .textInscribirse{
+        width: 82%;
+    }
+    .btnInscribirse{
+        width: 165px;
+    }
+    .btnClases2{
+        width: 120px;
+    }
+    .tit{
+        height: 40%;
+    }
+    .fotoNosotros,.textNosotros,.textoEntrena,.imagenEntrena,.textoEntrenatu,.imagenEntrenatu{
+        
+        min-width: 500px;
+        max-width: 600px;
+        margin-right: 0;
+    }
+    .containerNosotros,.entrenador,.entrenatu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .equipamiento, .entrenamiento, .instructores,.objetivos{
+        
+        max-width: 400px;
+        min-width: 320px;
+    }
+    .descripcion,.instalacion1,.instalacion2{
+        flex-wrap: wrap;
+    }
+    .nosotros{
+        height: 173vh;
+    }
+    .textDescripcion{
+        width: 100%;
+    }
+    .textoEntrenatu{
+        order:1;
+    }
+    .entrenamientos{
+        height: 142vh;
+    }
+    .inscribirse, .clasesHorario{
+        margin-top: 20px;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida,.textoIndiceMasa,.imgIndiceMasa,
+    .imgCrossfit,.imgMMA,.imgYoga,.imgAquaPilates,.imgSpinning,.imgBodyPump,.textoEntrenadores,.imgEntrenador,
+    .textoIntroClases,.imgIntroClases,.imgIntroClases2,.imgCrossfit2,.columna,.videoCrossfit,.entrenadorCrossfit,.imgYoga2,
+    .imgMMA2,.videoYoga,.videoAquapilates,.videoBodyPump,.videoMMA,.videoSpinning,.imgSpinning2,.imgAquapilates2,.imgBodyPump2,
+    .infoContacto,.formularioContacto,.textarea,.ContainertarjetaLogin,.entrenadorYoga,.entrenadorMMA,.entrenadorAquapilates,
+    .entrenadorBodyPump,.entrenadorSpinning
+    {
+        
+        min-width: 500px;
+        max-width: 600px;
+    }
+    .instalacion1,.instalacion2{
+        justify-content: center;
+    }
+    .instalaciones{
+        height: 186vh;
+    }
+    .tarjeta{
+        min-width: 400px;
+        margin-top: 20px;
+        height: 600px;
+    }
+    .tarjetas{
+        flex-wrap: wrap;
+    }
+    .programas{
+        height: 201vh;
+    }
+    .containerIndiceMasa,.containerPartners,.clases1,.clases2,.introEntrenadores,.containerIntroClases,
+    .fila,.contenidoContacto,.entrenadores1,.entrenadores2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .indiceMasa{
+        height: 93vh;
+    }
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        font-size: 20px;
+    }
+    .containerIMC h1{
+        font-size: 32px;
+    }
+    .imgON, .imgEVL, .imgGT,.imgNK, .imgASF{
+        width: 250px;
+        height: 170px;
+        margin: 20px;
+    }
+    .partners{
+        height: 71vh;
+    }
+    .clases{
+        height: 243vh;
+    }
+    .textoEntrenadores{
+        margin:0;
+    }
+    .entrenadores{
+        height: 190vh;
+    }
+    .galeria{
+        height: 128vh;
+    }
+    .containerNewsletter, .containerFooter{
+        width: 90%;
+    }
+    .icoCorriendo{
+        background-position: center right;
+    }
+    .imgIntroClases{
+        margin : 20px 0;
+
+    }
+    .sectionClases{
+        height: 163vh;
+    }
+    .imgIntroClases2{
+        order: 1;
+        margin-top: 20px;
+    }
+    .textoIntroClases:nth-child(2),.imgCrossfit2,.textoIntroClases:nth-child(2),.imgYoga2,
+    .textoIntroClases:nth-child(2),.imgSpinning2,.textoIntroClases:nth-child(2),.imgMMA2,
+    .textoIntroClases:nth-child(2),.imgAquapilates2,.textoIntroClases:nth-child(2),.imgBodyPump2
+    {
+        margin: 0;
+    }
+    .containerClase .fila:nth-child(2) .columna{
+        min-width: 200px;
+        max-width: 554px;
+    }
+    .containerClase .fila:nth-child(2){
+        height: 460px;
+        margin:20px auto;
+    }
+    .clase{
+        height: 212vh;
+    }
+    .videoCrossfit,.videoYoga,.videoAquapilates,.videoMMA,.videoBodyPump,.videoSpinning{
+        height: 270px;
+        margin-right: 0;
+    }
+    .dato .negrita,.fila .negrita{
+        font-size: 24px;
+    }
+    .containerContacto{
+        height: 200vh;
+    }
+    .formularioContacto h1{
+        font-size: 32px;
+        margin-top: 50px;
+    }
+    .textarea, .containerFormulario label,.containerFormulario input[type=text], .containerFormulario input[type=email],
+    .dato .negrita{
+        font-size: 24px;
+        width: 500px;
+    }
+    .entrenadores{
+        height: 345vh;
+    }
+    
+}
+
+@media screen and (max-width: 667px) and (max-height: 375px) {
+    .publi{
+        height: 97vh;
+    }
+    .nosotros{
+        height: 570vh;
+    }
+    .entrenamientos{
+        height: 325vh;
+    }
+    .instalaciones{
+        height: 396vh;
+    }
+    .programas{
+        height: 544vh;
+    }
+    .indiceMasa{
+        height: 255vh;
+    }
+    .partners{
+        height: 308vh;
+    }
+    .clases{
+        height: 500vh;
+    }
+    .entrenadores{
+        height: 800vh;
+    }
+    .galeria{
+        height: 311vh;
+    }
+    .newsletter{
+        height: 67vh;
+    }
+    .footer{
+        height: 257vh;
+    }
+    .sectionClases{
+        height: 398vh;
+    }
+    .clase{
+        height: 500vh;
+    }
+    .containerContacto{
+        height: 544vh;
+    }
+    .textarea, .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        width: 437px;
+    }
+    .mapa{
+        height: 77vh;
+    }
+    .principalClases,.principalContacto,.principalLogin{
+        height: 50vh;
+    }
+    .login{
+        height: 272vh;
+    }
+}
+
+@media screen and (max-width: 640px) and (max-height: 480px) {
+    .clasesHorario,.inscribirse{
+        height: 350px;
+    }
+    .tit{
+        height: 20%;
+    }
+    .horas,.btnClases{
+        width: 90%;
+    }
+    .containerHoras{
+        flex-wrap: wrap;
+    }
+    .horas{
+        height: 37%;
+    }
+    .publi{
+        height: 84vh;
+    }
+    .nosotros{
+        height: 455vh;
+    }
+    .entrenamientos{
+        height: 256vh;
+    }
+    .instalaciones{
+        height: 313vh;
+    }
+    .programas{
+        height: 425vh;
+    }
+    .indiceMasa{
+        height: 202vh;
+    }
+    .partners{
+        height: 246vh;
+    }
+    .clases{
+        height: 394vh;
+    }
+    .entrenadores{
+        height: 627vh;
+    }
+    .galeria{
+        height: 242vh;
+    }
+    .newsletter{
+        height: 55vh;
+    }
+    .footer{
+        height: 353vh;
+    }
+    .infoGym,.poliClases,.enlaces{
+        min-width: 400px;
+        max-width: 500px;
+    }
+    .containerFooter{
+        flex-wrap: wrap;
+    }
+    .rssFooter{
+        width: 44%;
+    }
+    .sectionClases{
+        height: 313vh;
+    }
+    .clase{
+        height: 405vh;
+    }
+    .clase .entrenadorCrossfit, .clase .entrenadorAquapilates, .clase .entrenadorBodyPump, .clase .entrenadorSpinning, .clase .entrenadorYoga, .clase .entrenadorMMA{
+        height: 331px;
+    }
+    .mapa{
+        height: 50vh;
+    }
+    .containerContacto{
+        height: 423vh;
+    }
+    .textarea, .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        width: 400px;
+    }
+    .containerFormulario{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 411px) and (max-height: 731px) {
+    .fotoNosotros, .textNosotros, .textoEntrena, .imagenEntrena, .textoEntrenatu, .imagenEntrenatu{
+        min-width: 390px;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida, .textoIndiceMasa, .imgIndiceMasa, .imgCrossfit, .imgMMA, .imgYoga, .imgAquaPilates, .imgSpinning, .imgBodyPump, .textoEntrenadores, .imgEntrenador, .textoIntroClases, .imgIntroClases, .imgIntroClases2, .imgCrossfit2, .columna, .videoCrossfit, .entrenadorCrossfit, .imgYoga2, .imgMMA2, .videoYoga, .videoAquapilates, .videoBodyPump, .videoMMA, .videoSpinning, .imgSpinning2, .imgAquapilates2, .imgBodyPump2, .infoContacto, .formularioContacto, .textarea, .ContainertarjetaLogin, .entrenadorYoga, .entrenadorMMA, .entrenadorAquapilates, .entrenadorBodyPump, .entrenadorSpinning{
+        min-width: 390px;
+    }
+    .containerPubli{
+        flex-wrap: wrap;
+    }
+    .inscribirse,.clasesHorario{
+        height: 320px;
+        width: 380px;
+    }
+    .publi{
+        height: 101vh;
+    }
+    .nosotros{
+        height: 325vh;
+    }
+    .num{
+        width: 230px;
+        margin:50px 0;
+    }
+    .numeros{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .parallax{
+        height: 114vh;
+    }
+    .entrenamientos{
+        height: 209vh;
+    }
+    .instalaciones{
+        height: 262vh;
+    }
+    
+    h2{
+        font-size: 26px;
+    }
+    .programas{
+        height: 283vh;
+    }
+    .tarjeta{
+        min-width: 380px;
+    }
+    .containerIMC h1{
+        font-size: 28px;
+    }
+    .textoIndiceMasa{
+        margin:0;
+    }
+    .indiceMasa{
+        height: 180vh;
+    }
+    .imgIndiceMasa{
+        height: 800px;
+    }
+    .btnCalcular{
+        order: 1;
+    }
+    .resultado{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        width: 235px;
+    }
+    .partners{
+        height: 160vh;
+    }
+    .clases{
+        height: 340vh;
+    }
+    .entrenadores{
+        height: 502vh;
+    }
+    .galeria{
+        height: 391vh;
+    }
+    .containerNewsletter{
+        flex-wrap: wrap;
+        height: 80%;
+    }
+    .newsletter {
+        height: 70vh;
+    }
+    .textoNewsletter{
+        margin-top: 20px;
+    }
+    .containerFooter{
+        flex-wrap: wrap;
+    }
+    footer{
+        height: 234vh;
+    }
+    .logoFooter{
+        width: 64%;
+    }
+    .rssFooter{
+        width: 225px;
+    }
+    .sectionClases{
+        height: 247vh;
+    }
+    .containerClase .fila:nth-child(2){
+        height: 690px;
+    }
+    .clase{
+        height: 341vh;
+    }
+    .containerContacto{
+        height: 289vh;
+    }
+    .containerFormulario{
+        max-width: 330px;
+        min-width: 340px;
+        border: 0;
+    }
+    .textarea, .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        width: 320px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) and (max-height: 720px) {
+    .fotoNosotros, .textNosotros, .textoEntrena, .imagenEntrena, .textoEntrenatu, .imagenEntrenatu{
+        max-width: 360px;
+        min-width: 350px;
+    }
+    span{
+        font-size: 20px;
+    }
+    
+    .nosotros{
+        height: 335vh;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida, .textoIndiceMasa, .imgIndiceMasa, .imgCrossfit, .imgMMA, .imgYoga, .imgAquaPilates, .imgSpinning, .imgBodyPump, .textoEntrenadores, .imgEntrenador, .textoIntroClases, .imgIntroClases, .imgIntroClases2, .imgCrossfit2, .columna, .videoCrossfit, .entrenadorCrossfit, .imgYoga2, .imgMMA2, .videoYoga, .videoAquapilates, .videoBodyPump, .videoMMA, .videoSpinning, .imgSpinning2, .imgAquapilates2, .imgBodyPump2, .infoContacto, .formularioContacto, .ContainertarjetaLogin, .entrenadorYoga, .entrenadorMMA, .entrenadorAquapilates, .entrenadorBodyPump, .entrenadorSpinning{
+        max-width: 360px;
+        min-width: 350px;
+    }
+    .tarjeta{
+        min-width: 320px;
+        max-width: 350px;
+    }
+    .logo{
+        width: 108px;
+        height: 70px;
+    }
+    .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        width: 220px;
+    }
+    .dato .negrita{
+        font-size: 20px;
+    }
+    .textarea{
+        min-width: 320px;
+        max-width: 350px;
+    }
+    .dato .negrita, .fila .negrita{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .containerFormulario{
+        min-width: 305px;
+        max-width: 305px;
+    }
+    .textarea, .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+    .inscribirse, .clasesHorario{
+        margin:10px 0;
+    }
+    .publi{
+        height: 110vh;
+    }
+    .nosotros{
+        height: 348vh;
+    }
+    .parallax{
+        height: 133vh;
+    }
+    .entrenamientos{
+        height:223vh ;
+    }
+    .instalaciones{
+        height: 298vh;
+    }
+    .programas{
+        height: 326vh;
+    }
+    .indiceMasa{
+        height: 202vh;
+    }
+    .partners{
+        height: 187vh;
+    }
+    .clases{
+        height: 381vh;
+    }
+    .entrenadores{
+        height: 558vh;
+    }
+    .galeria{
+        height: 395vh;
+    }
+    footer{
+        height: 255vh;
+    }
+    .containerContacto{
+        height: 304vh;
+    }
+    
+    .logo{
+        width: 108px;
+        height: 55px;
+    }
+    
+}
+@media screen and (max-width: 360px) and (max-height: 800px) {
+    span{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .num{
+        width: 170px;
+    }
+    .fotoNosotros, .textNosotros, .textoEntrena, .imagenEntrena, .textoEntrenatu, .imagenEntrenatu{
+        max-width: 360px;
+        min-width: 320px;
+    }
+    .containerPubli{
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    .inscribirse,.clasesHorario{
+        width: 83%;
+    }
+    .clasesHorario{
+        margin-left: 0;
+    }
+    .publi{
+        height: 83vh;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida, .textoIndiceMasa, .imgIndiceMasa, .imgCrossfit, .imgMMA, .imgYoga, .imgAquaPilates, .imgSpinning, .imgBodyPump, .textoEntrenadores, .imgEntrenador, .textoIntroClases, .imgIntroClases, .imgIntroClases2, .imgCrossfit2, .columna, .videoCrossfit, .entrenadorCrossfit, .imgYoga2, .imgMMA2, .videoYoga, .videoAquapilates, .videoBodyPump, .videoMMA, .videoSpinning, .imgSpinning2, .imgAquapilates2, .imgBodyPump2, .infoContacto, .formularioContacto, .textarea, .ContainertarjetaLogin, .entrenadorYoga, .entrenadorMMA, .entrenadorAquapilates, .entrenadorBodyPump, .entrenadorSpinning{
+        max-width: 320px;
+        min-width: 325px;
+    }
+    .tarjeta{
+        min-width: 340px;
+        max-width: 350;
+    }
+    .containerNewsletter{
+        flex-wrap: wrap;
+    }
+    .containerFooter{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .nosotros{
+        height: 279vh;
+    }
+    .numeros{
+        flex-wrap: wrap;
+    }
+    .entrenamientos{
+        height: 182vh;
+    }
+    .instalaciones{
+        height: 240vh;
+    }
+    .programas{
+        height: 261vh;
+    }
+    .imgON, .imgEVL, .imgGT, .imgNK, .imgASF{
+        width: 156px;
+        height: 106px;
+    }
+    .imgIndiceMasa{
+        height: 835px;
+    }
+    .indiceMasa{
+        height: 167vh;
+    }
+    .btnCalcular{
+        margin-top: 20px;
+    }
+    .resultado{
+        margin-top: 0;
+    }
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        width: 179px;
+    }
+    .partners{
+        height: 105vh;
+    }
+    .clases{
+        height: 310vh;
+    }
+    .entrenadores{
+        height: 446vh;
+    }
+    .geleria{
+        height: 95vh;
+    }
+    .newsletter{
+        height: 65vh;
+    }
+    .logo{
+        width: 115px;
+        height: 66px;
+    }
+    footer{
+        height: 200vh;
+    }
+    .rssFooter{
+        width: 60%;
+    }
+    .sectionClases{
+        height: 206vh;
+    }
+    .clase{
+        height: 274vh;
+    }
+    .negrita{
+        font-size: 20px;
+    }
+    .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        font-size: 20px;
+        width: 239px;
+    }
+    .containerFormulario{
+        border: 0;
+        box-sizing: border-box;
+    }
+    .containerContacto{
+        height: 282vh;
+    }
+    .principalClases,.principalContacto,.principalLogin{
+        overflow-x: hidden;
+    }
+    .containerFormulario .fila:nth-child(4){
+        overflow-x: hidden;
+    }
+    .dato .negrita, .fila .negrita{
+        font-size: 20px;
+    }
+    .containerContacto{
+        height: 242vh;
+    }
+}
+
+
+@media screen and (max-width: 400px)  {
+    span{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .num{
+        width: 170px;
+    }
+    .fotoNosotros, .textNosotros, .textoEntrena, .imagenEntrena, .textoEntrenatu, .imagenEntrenatu{
+        max-width: 360px;
+        min-width: 320px;
+    }
+    .containerPubli{
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    .inscribirse,.clasesHorario{
+        width: 83%;
+    }
+    .clasesHorario{
+        margin-left: 0;
+    }
+    .publi{
+        height: 83vh;
+    }
+    .imgFitness, .imgAcuatica, .imgExterior, .imgDirigida, .textoIndiceMasa, .imgIndiceMasa, .imgCrossfit, .imgMMA, .imgYoga, .imgAquaPilates, .imgSpinning, .imgBodyPump, .textoEntrenadores, .imgEntrenador, .textoIntroClases, .imgIntroClases, .imgIntroClases2, .imgCrossfit2, .columna, .videoCrossfit, .entrenadorCrossfit, .imgYoga2, .imgMMA2, .videoYoga, .videoAquapilates, .videoBodyPump, .videoMMA, .videoSpinning, .imgSpinning2, .imgAquapilates2, .imgBodyPump2, .infoContacto, .formularioContacto, .textarea, .ContainertarjetaLogin, .entrenadorYoga, .entrenadorMMA, .entrenadorAquapilates, .entrenadorBodyPump, .entrenadorSpinning{
+        max-width: 320px;
+        min-width: 325px;
+    }
+    .tarjeta{
+        min-width: 340px;
+        max-width: 350;
+    }
+    .containerNewsletter{
+        flex-wrap: wrap;
+    }
+    .containerFooter{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .nosotros{
+        height: 279vh;
+    }
+    .numeros{
+        flex-wrap: wrap;
+    }
+    .entrenamientos{
+        height: 182vh;
+    }
+    .instalaciones{
+        height: 240vh;
+    }
+    .programas{
+        height: 261vh;
+    }
+    .imgON, .imgEVL, .imgGT, .imgNK, .imgASF{
+        width: 156px;
+        height: 106px;
+    }
+    .imgIndiceMasa{
+        height: 835px;
+    }
+    .indiceMasa{
+        height: 167vh;
+    }
+    .btnCalcular{
+        margin-top: 20px;
+    }
+    .resultado{
+        margin-top: 0;
+    }
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        width: 179px;
+    }
+    .partners{
+        height: 105vh;
+    }
+    .clases{
+        height: 310vh;
+    }
+    .entrenadores{
+        height: 446vh;
+    }
+    .geleria{
+        height: 95vh;
+    }
+    .newsletter{
+        height: 65vh;
+    }
+    .logo{
+        width: 115px;
+        height: 66px;
+    }
+    footer{
+        height: 200vh;
+    }
+    .rssFooter{
+        width: 60%;
+    }
+    .sectionClases{
+        height: 206vh;
+    }
+    .clase{
+        height: 274vh;
+    }
+    .negrita{
+        font-size: 20px;
+    }
+    .containerFormulario label, .containerFormulario input[type=text], .containerFormulario input[type=email], .dato .negrita{
+        font-size: 20px;
+        width: 239px;
+    }
+    .containerFormulario{
+        border: 0;
+        box-sizing: border-box;
+    }
+    .containerContacto{
+        height: 282vh;
+    }
+    .principalClases,.principalContacto{
+        overflow-x: hidden;
+    }
+    .containerFormulario .fila:nth-child(4){
+        overflow-x: hidden;
+    }
+    .dato .negrita, .fila .negrita{
+        font-size: 20px;
+    }
+    .containerContacto{
+        height: 242vh;
+    }
+}
+
+@media screen and (max-width: 400px) AND (orientation: landscape) {
+    h1{
+        font-size: 50px;
+    }
+    .inscribirse,.clasesHorario{
+        height: 290px;
+        margin-top: 20px;
+    }
+    .publi{
+        height: 80vh;
+    }
+    .nosotros{
+        height: 199vh;
+    }
+    .entrenamientos{
+        height: 194vh;
+    }
+    .programas{
+        height: 173vh;
+    }
+    .btnContratar{
+        width: 150px;
+    }
+    .indiceMasa{
+        height: 151vh;
+    }
+    .partners{
+        height: 70vh;
+    }
+    .clases{
+        height: 173vh;
+    }
+    .entrenadores{
+        height: 322vh;
+    }
+    .galeria{
+        height: 122vh;
+    }
+    .newsletter{
+        height: 57vh;
+    }
+    .icoCorriendo{
+        height: 136px;
+    }
+    .footer{
+        height: 176vh;
+    }
+    .sectionClases{
+        height: 203vh;
+    }
+    .clases{
+        height: 175vh;
+    }
+    .clase{
+        height: 231vh;
+    }
+    .containerContacto{
+        height: 345vh;
+    }
+}
+
+@media screen and (max-width: 360px) AND (orientation: landscape) {
+    .inscribirse,.clasesHorario{
+        margin-top: 0;
+        height: 220px;
+    }
+    .publi{
+        height: 73vh;
+    }
+    .nosotros{
+        height: 228vh;
+    }
+    .entrenamientos{
+        height: 220vh;
+    }
+    .programas{
+        height: 187vh;
+    }
+    .btnContratar{
+        width: 140px;
+    }
+    .indiceMasa{
+        height: 140vh;
+    }
+    .resultado{
+        width: 118px;
+    }
+    .imc input[type=text], .imc input[type=email], .imc select, .formFooter input[type=email]{
+        width: 100px;
+    }
+    .imgIndiceMasa{
+        height: 403px;
+    }
+    .partners{
+        height: 79vh;
+    }
+    .imgON,.imgEVL,.imgGT,.imgNK,.imgASF{
+        margin:20px;
+    }
+    .clases{
+        height: 194vh;
+    }
+    .entrenadores{
+        height: 358vh;
+    }
+    .galeria{
+        height: 133vh;
+    }
+    .newsletter{
+        height: 54vh;
+    }
+    .icoCorriendo{
+        height: 134px;
+    }
+    .footer{
+        height: 192vh;
+    }
+    .principalClases{
+        height: 47vh;
+    }
+    .sectionClases{
+        height: 225vh;
+    }
+    .clases{
+        height: 192vh;
+    }
+    .clase{
+        height: 254vh;
+    }
+    .containerContacto{
+        height: 385vh;
+    }
+    
+}

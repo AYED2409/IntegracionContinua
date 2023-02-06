@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/navcollapsed.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/galleria.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>FITNESS GYM</title>
+</head>
+<body>
+  <div class="subir">
+    <div class="flecha"></div>
+  </div>
+    <div class="container">
+        <section class="principal"> 
+            <video onloadedmetadata="this.muted=true" autoplay loop>
+                <source src="./video/inicio.mp4">
+            </video>
+            
+            <header class="global-nav">
+                <nav role="navigation" class="container">
+                  <ul class="nav-wrapper">
+                    <!-- Start Logo Section -->
+                    <li class="navsection-logo">
+                      <a href="/">
+                        <div class="logo"></div>
+                      </a>
+                    </li>
+                    <!-- End Logo Section -->
+                    <!-- Start Primary Section -->
+                    <li class="navsection-primary">
+                      <ul>
+                        <li><a href="./index.html" class="activo active">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="./clases.html">Clases</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                      </ul>
+                    </li>
+                    <!-- End Primary Section -->
+                    <!-- Start Mobile Section -->
+                    <li class="navsection-mobile">
+                      <!-- Mobile Menu Button -->
+                               <h2>Menu</h2>
+                      <a class="mobilemenu-wrapper" id="toggle">
+                          <span class="bars"></span>
+                          <span class="bars"></span>
+                          <span class="bars"></span>
+                        </a>
+                      <!-- Overlay -->
+                      <div class="overlay" id="overlay">
+                        <div>
+                          <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="./clases.html">Clases</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- End Mobile Section -->
+                    <!-- Start Search Section -->
+                    <li class="navsection-search">
+                      <div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+        </section>
+        <main>
+            <section class="publi">
+                <div class="containerPubli">
+                    <div class="inscribirse">
+                      <div class="textInscribirse">
+                        <span class="negrita">Inscribete </span><span>y obten un 40% de descuento</span>
+                      </div>
+                      <div class="btnInscribirse">
+                        <a href="">Inscribirse</a>
+                      </div>
+                    </div>
+                    <div class="clasesHorario">
+                      <div class="tit">
+                        <span class="negrita">Clases y Horarios</span>
+                      </div>
+                      <div class="containerHoras">
+                        <div class="horas">
+                          <span class="titulo">LUNES - VIERNES</span>
+                          <span>7:00 - 23:00</span>
+                          <span class="titulo">SABADO - DOMINGO</span>
+                          <span>8:00 - 21:00</span>
+                        </div>
+                        <div class="btnClases">
+                          <div class="btnClases2">
+                            <a href="">Clases</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nosotros" id="nosotros">
+              <h1>Sobre Nosotros</h1>
+              <div class="containerNosotros">
+                <div class="fotoNosotros"></div>
+                <div class="textNosotros">
+                  <span>Somos un centro especializado en la práctica deportiva y  salud.
+                  </span>
+                  <span>Ofrecemos multitud de actividades con instalaciones y equipamiento de última generación.</span>
+                  <span>Contamos con un equipo de profesionales cualificados.
+                  </span>
+                  <span>Te ayudamos a mejorar tu bienestar y tu forma física.
+                  </span>
+                </div>
+              </div>
+              <div class="descripcion">
+                <div class="entrenamiento">
+                  <div class="icoEntrenamiento"></div>
+                  <h2>Entrenamiento</h2>
+                  <div class="textDescripcion">
+                    <span>Te ofrecemos el mejor entrenamiento
+                    </span>
+                    <span>Te damos la rutina que necesitas
+                    </span>
+                  </div>
+                </div>
+                <div class="equipamiento">
+                  <div class="icoEquipamiento"></div>
+                  <h2>Equipamiento</h2>
+                  <div class="textDescripcion">
+                    <span>Contamos con lo último en equipamiento.
+                    </span>
+                    <span>Todo el instrumento que necesitas.</span>
+                  </div>
+                </div>
+                <div class="instructores">
+                  <div class="icoInstructor"></div>
+                  <h2>Instructores</h2>
+                  <div class="textDescripcion">
+                    <span>Tenemos a los mejores instructores cualificados.
+                    </span>
+                    <span>Siempre dispuestos a ayudarte</span>
+                  </div>
+                </div>
+                <div class="objetivos">
+                  <div class="icoObjetivos"></div>
+                  <h2>Objetivos</h2>
+                  <div class="textDescripcion">
+                    <span>Propon tus objetivos y te los cumplimos.
+                    </span>
+                    <span>Tus objetivos son los nuestros.</span>
+                  </div>
+                </div>
+              </div> 
+            </section>
+            <section class="parallax">
+                <div class="numeros">
+                  <div class="num">
+                      <div class="numDescriptivo counter" data-count="26"">0</div>
+                      <div class="titNumero">
+                        <span>Clases</span>
+                        <span>Dirigidas</span>
+                      </div>
+                  </div>
+                  <div class="num">
+                    <div class="numDescriptivo counter" data-count="12">0</div>
+                      <div class="titNumero">
+                        <span>Años de</span>
+                        <span>Experiencia</span>
+                      </div>
+                  </div>
+                  <div class="num">
+                    <div class="numDescriptivo counter" data-count="3280" >0</div>
+                      <div class="titNumero">
+                        <span>Clientes</span>
+                        <span>Satisfechos</span>
+                      </div>
+                  </div>
+                  <div class="num">
+                    <div class="numDescriptivo counter" data-count="18">0</div>
+                      <div class="titNumero">
+                        <span>Mejores</span>
+                        <span>Entrenadores</span>
+                      </div>
+                  </div>
+                </div>
+            </section>
+            <section class="entrenamientos">
+              <h1>Entrenamiento</h1>
+              <div class="entrenador">
+                <div class="imagenEntrena"></div>
+                <div class="textoEntrena"> 
+                  <div class="textDescripcion">
+                    <h2>Entrenador Personal</h2>
+                    <span>Tienes la ópcion de tener un entrenador personal en cada ejercicio que realices.
+                    </span>
+                    <span>Te elabora planes personalizados de nutrición y entrenamiento.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="entrenatu">
+                <div class="textoEntrenatu">
+                  <h2>Entrena por tu cuenta</h2>
+                  <div class="textDescripcion">
+                  <span>Te damos la rutina, ponte a entrenar y obtener tus resultados deseados.
+                  </span>
+                  <span>En todo momento puedes acudir a nuestro personal si tienes dudas.</span>
+                  </div>
+                </div>
+                <div class="imagenEntrenatu"></div>
+              </div>
+            </section>
+            <section class="instalaciones">
+              <div class="containerInstalacion">
+                <h1>Instalaciones</h1>
+                <div class="instalacion1">
+                  <div class="imgFitness">
+                    <div class="texto">
+                      <h2>Zona Finter</h2>
+                    </div>
+                  </div>
+                  <div class="imgAcuatica">
+                    <div class="texto">
+                      <h2>Zona Acuática</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="instalacion2">
+                  <div class="imgExterior">
+                    <div class="texto">
+                      <h2>Zona Exteriores</h2>
+                    </div>
+                  </div>
+                  <div class="imgDirigida">
+                    <div class="texto">
+                      <h2>Zona Actividades Dirigidas</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="programas">
+              <div class="containerProgramas">
+                <div class="containerTarjetas">
+                  <h1>Nuestros Programas</h1>
+                  <div class="tarjetas">
+                    <div class="tarjeta">
+                      <div class="titTarjeta">
+                        <h1>STANDAR</h1>
+                      </div>
+                      <div class="contenidoTarjeta">
+                        <div class="icoEntrenamiento"></div>
+                        <div class="textoTarjeta">
+                          <span>2 veces/semana</span>
+                          <span>Acceso a equipamiento</span>
+                          <span>Guía de ejercicios</span>
+                          <span>Guía de dieta</span>
+                          <h1>20€/mes</h1>
+                          <div class="btnContratar">
+                            <a href="">Contratar</a>
+                          </div>
+                        </div>
+            
+                      </div>
+                    </div>
+
+                    <div class="tarjeta">
+                      <div class="titTarjeta1">
+                        <h1>PROFESIONAL</h1>
+                      </div>
+                      <div class="contenidoTarjeta">
+                        <div class="icoCorazon"></div>
+                        <div class="textoTarjeta">
+                          <span>5 veces/semana</span>
+                          <span>Acceso a equipamiento</span>
+                          <span>4 clases/semana</span>
+                          <span>Guía de ejercicios</span>
+                          <span>Guía de dieta</span>
+                          <span>Entrenador Personal</span>
+                          <h1>50€/mes</h1>
+                          <div class="btnContratar">
+                            <a href="">Contratar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tarjeta">
+                      <div class="titTarjeta2">
+                        <h1>PREMIUM</h1>
+                      </div>
+                      <div class="contenidoTarjeta">
+                        <div class="icoFuerza"></div>
+                        <div class="textoTarjeta">
+                          <span>Acceso ilimitado</span>
+                          <span>Guía de ejercicios</span>
+                          <span>Guía de dieta</span>
+                          <span>Entrenador Personal</span>
+                          <span>Proteinas y Vitaminas</span>
+                          <h1>70€/mes</h1>
+                          <div class="btnContratar">
+                          <a href="">Contratar</a>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="indiceMasa">
+              <div class="containerIndiceMasa">
+                <div class="textoIndiceMasa">
+                  <h1>INDICE DE MASA CORPORAL</h1>
+                  <span>Para ayudar a ver tus mejoras ponemos dispones de un calculador de IMC.</span>
+                  <span>El IMC mide el contenido de grasa corporal en relación a la estatura y el peso</span>
+                  <span>que presentan tanto los hombres como las mujeres.</span>
+                </div>
+                <div class="imgIndiceMasa">
+                  <div class="containerIMC">
+                    <h1>CALCULADOR IMC</h1>
+                    <div class="formIMC">
+                      <form class=imc action="">
+                        <div class="formPart1">
+                          <input type="email" name="email" placeholder="Email">
+                          <select name="genero">
+                           
+                           <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                          </select>
+                        </div>
+                        <div class="formPart2">
+                          <input type="text" name="altura" placeholder="altura / cm">
+                          <input type="text" name="peso" placeholder="peso / kg">
+                          <input type="text" name="edad" placeholder="edad">
+                          
+                        </div>
+                        <div class="formPart3">
+                          <div class="btnCalcular"><a href="">Calcular</a></div>
+                          <div class="resultado"><h2>0.0</h2></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="partners">
+              <h1>Colaboradores</h1>
+              <div class="containerPartners">
+                <div class="imgON"></div>
+                <div class="imgEVL"></div>
+                <div class="imgGT"></div>
+                <div class="imgNK"></div>
+                <div class="imgASF"></div>
+              </div>
+            </section>
+            <section class="clases">
+              <h1>Clases Dirigidas</h1>
+              <div class="containerClases">
+                <div class="clases1">
+                  <div class="imgCrossfit">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#crossfit"><h2>Crossfit</h2></a>
+                    </div>
+                  </div>
+                  <div class="imgMMA">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#mma"><h2>MMA</h2></a>
+                    </div>
+                  </div>
+                  
+                  <div class="imgYoga">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#yoga"><h2>Yoga</h2></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="clases2">
+                  <div class="imgAquaPilates">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#aquaPilates"><h2>AquaPilates</h2></a>
+                    </div>
+                  </div>
+                  <div class="imgSpinning">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#spinning"><h2>Spinning</h2></a>
+                    </div>
+                  </div>
+                  <div class="imgBodyPump">
+                    <div class="fondoOpacidad">
+                      <a href="./clases.html#bodyPump"><h2>Body Pump</h2></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="entrenadores">
+              <h1>Entrenadores</h1>
+              <div class="containerEntrenadores">
+                <div class="introEntrenadores">
+                  <div class="textoEntrenadores">
+                    <span>Nuestros entrenadores tienen competencias centradas en ayudar </span>
+                    <span>a las personas a lograr objetivos de salud y estado físico</span>
+                    <span>Dado que los entrenadores interactuarán con los miembros del gimnasio todo el día, </span>
+                    <span>nuestros profesionales tienden son extrovertidos, comunicativos,</span>
+                    <span>enérgicos, observadores y trabajadores.</span>
+                    <span>Han obtenido la acreditación europea EHFA Nivel EQF3 Fitness Instructor,</span>
+                    <span>Nivel EQF4 Personal Trainer y la acreditación FEFF Nivel 5.</span>
+                    
+                  </div>
+                  <div class="imgEntrenador"></div>
+                  
+                </div>
+                <div class="entrenadores1">
+                  <div class="entrenadorCrossfit">
+                    <div class="fondoOpacidad">
+                      <h2>Crosffit</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">Justin Mediros</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="entrenadorYoga">
+                    <div class="fondoOpacidad">
+                      <h2>Yoga</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">Indra Davi</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="entrenadorMMA">
+                    <div class="fondoOpacidad">
+                      <h2>MMA</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">Anderson Silva</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="entrenadores2">
+                  <div class="entrenadorSpinning">
+                    <div class="fondoOpacidad">
+                      <h2>Spinning</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">Julie Rice</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="entrenadorAquapilates">
+                    <div class="fondoOpacidad">
+                      <h2>Aquapilates</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">Anna Espar</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="entrenadorBodyPump">
+                    <div class="fondoOpacidad">
+                      <h2>Body Pump</h2>
+                      <div class="contenidoEntrenador">
+                        <span class="nombreEntrenador">David Ruiz</span>
+                        <div class="rss">
+                          <div class="tw"></div>
+                          <div class="ig"></div>
+                          <div class="fb"></div>
+                        </div>
+                        <div class="btnInfo">
+                          <div class="btn">
+                            <a href="">Información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="galeria">
+              <h1>Galería</h1>
+              <div class="containerGaleria">
+                <section class="gallery" id="portafolio">
+                  <div class="contenedor">
+                    <div class="contenedor-galeria">
+                      <img src="./img/galeria/galeria1.jpg" alt="sala gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria4.jpg" alt="maquina bicicleta gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria6.jpg" alt="entrenadora con alumno ayudando a hacer pesas" class="img-galeria">
+                      <img src="./img/galeria/galeria10.jpg" alt="alumnas en clase dirigida del gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria9.jpg" alt="personas en clase de yoga" class="img-galeria">
+                      <img src="./img/galeria/galeria2.jpg" alt="pistas de tenis del gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria7.jpg" alt="clases de boxeo" class="img-galeria">
+                      <img src="./img/galeria/galeria3.jpg" alt=" sala con maquinaria del gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria8.jpg" alt="equipamiento para las clases de MMA" class="img-galeria">
+                      <img src="./img/galeria/entrenamiento.jpg" alt=" alumnos con pesas" class="img-galeria">
+                      <img src="./img/galeria/galeria5.jpg" alt="sala con maquinaria del gimnasio" class="img-galeria">
+                      <img src="./img/galeria/galeria11.jpg" alt="foto de alumnos del gimnasio" class="img-galeria">
+                    </div>
+                  </div>
+                </section>
+                <section class="imagen-light">
+                  <i class="close"><div class="x"></div></i>
+                  <img src="" alt="" class="agregar-imagen">
+                </section>
+              </div>
+            </section>
+        </main>
+        <footer>
+          <section class="newsletter">
+            <div class="capaOpacidad">
+              <div class="containerNewsletter">
+                <div class="textoNewsletter">
+                  <span>Suscribete a nuestro </span><span class="negrita">NEWSLETTER </span><br>
+                  <span>y recibiras Información de clases y ofertas</span>
+                </div>
+                <div class="icoCorriendo"></div>
+                <div class="formFooter">
+                  <input type="email" placeholder="Inserta tu email">
+                  <div class="btnSuscribirse">
+                    <a href="">Suscribirse</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer">
+            <div class="opacidadFooter">
+              <div class="logoFooter">
+                <div class="logo"></div>
+              </div>
+              <div class="containerFooter">
+                <div class="infoGym">
+                  
+                  <div class="datos">
+                    <h2>Dirección</h2>
+                    <span>C. de Fomento, 3, 28013 Madrid</span>
+                    <h2>Teléfonos</h2>
+                    <span>915 47 26 68</span>
+                    <span>655 34 97 90</span>
+                    <h2>Email</h2>
+                    <span>info@fitnesgym.com</span>
+                    <h2>Horario</h2>
+                    <span>Lunes - Viernes : 07:00 - 23hrs</span>
+                    <span>Sábados - Domingos : 08:00 - 22:00 hrs</span>
+                  </div> 
+                </div>
+                <div class="poliClases">
+                  <div class="politicas">
+                    <h2>Políticas</h2>
+                    <span><a href="">Políticas de Privacidad</a></span>
+                    <span><a href="">Políticas de Cookies</a></span>
+                    <span><a href="">Aviso Legal</a></span>
+                  </div>
+                  <div class="clasesFooter">
+                    <h2>Clases</h2>
+                    <span><a href="">MMA</a></span>
+                    <span><a href="">Yoga</a></span>
+                    <span><a href="">Crossfit</a></span>
+                    <span><a href="">Spinning</a></span>
+                    <span><a href="">Aquapilates</a></span>
+                    <span><a href="">Body Pump</a></span>
+                  </div>
+                </div>
+                <div class="enlaces">
+                  <h2>Enlaces</h2>
+                  <span><a href="./index.html">Inicio</a></span>
+                  <span><a href="#nosotros">Nosotros</a></span>
+                  <span><a href="./clases.html">Clases</a></span>
+                  <span><a href="./contacto.html">Contacto</a></span>
+                  <span><a href="./login.html">Login</a></span>
+                  <span><a href="">Instalaciones</a></span>
+                  <span><a href="">Programas</a></span>
+                  <span><a href="">Galería</a></span>
+                </div>
+              </div>
+              <div class="rssFooter">
+                <div class="rssFooter">
+                  <div class="fb"></div>
+                  <div class="ig"></div>
+                  <div class="tw"></div>
+                </div>
+              </div>
+              <div class="separador"><hr></div>
+              <div class="derechosAutor">
+                <span>Fitness Gym © 2023 Todos los derechos reservados</span>
+              </div>
+            </div>
+           
+          </section>
+        </footer>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/galeria.js"></script>
+</html>
