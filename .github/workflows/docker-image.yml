@@ -28,5 +28,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ${{secrets.DOCKERHUB_USERNAME }}/practicaCI:latest
+          ${{secrets.DOCKERHUB_USERNAME }}/practicaci:latest
           
